@@ -7,7 +7,6 @@ from sys import stdin
 import sys
 
 def findSecondLargest(sequenceOfNumbers):
-    # Write your code here.
     sequenceOfNumbers.sort()
     for i in range(len(sequenceOfNumbers)-2,-1,-1):
         if sequenceOfNumbers[i] < sequenceOfNumbers[-1]:
@@ -16,7 +15,6 @@ def findSecondLargest(sequenceOfNumbers):
     pass
 
 
-# Taking input using fast I/O.
 def takeInput():
     n = int(input())
 
@@ -24,7 +22,6 @@ def takeInput():
 
     return sequenceOfNumbers, n
 
-# Main.
 t = int(input())
 while t:
     sequenceOfNumbers, n = takeInput()
